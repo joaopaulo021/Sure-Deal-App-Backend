@@ -7,7 +7,7 @@ import {
 } from 'typeorm';
 
 @Entity({ name: 'address' })
-export class AdressEntity {
+export class AddressEntity {
   @PrimaryGeneratedColumn('rowid')
   id: number;
 
@@ -20,10 +20,10 @@ export class AdressEntity {
   @Column({ name: 'number', nullable: false })
   numberAddress: number;
 
-  @Column({ name: 'cpf', nullable: false })
+  @Column({ name: 'cep', nullable: false })
   cep: string;
 
-  @Column({ name: 'password', nullable: false })
+  @Column({ name: 'city_id', nullable: false })
   cityId: number;
 
   @CreateDateColumn({ name: 'created_at' })
